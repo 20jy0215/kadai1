@@ -35,8 +35,9 @@ public class DrawFigure {
 		EZ.addText(40,20, "Hello World", Color.BLACK, 12);
 		EZ.addText(300,50, "012あいう漢字", Color.BLACK, 24);
 
-		// 円を描く．(中心座標x, 中心座標y, 幅，高さ，色，塗りつぶし)
-		EZ.addCircle(100, 100, 150, 150, Color.BLUE, true);
-		EZ.addCircle(200, 200, 200, 200, Color.RED,  false);
+		// 円を描く.(中心座標 x, 中心座標 y, 幅,高さ,色,塗りつぶし)
+		EZCircle circle = EZ.addCircle(100, 100, 150, 150, Color.BLUE, true);
+		circle.setColor(Color.RED);
+		
 	}
 }
